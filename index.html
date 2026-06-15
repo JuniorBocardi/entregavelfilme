@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DramaTime - Seu Filme Completo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .entrega-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .entrega-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .arrow-down {
+            margin: 20px 0 40px;
+            animation: bounce 2s infinite;
+        }
+
+        .embed-placeholder {
+            width: 100%;
+            max-width: 450px;
+            aspect-ratio: 9/16;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px dashed #a855f7;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .embed-placeholder span {
+            color: #aaa;
+            font-size: 1.1rem;
+            padding: 20px;
+        }
+
+        .future-content {
+            min-height: 300px;
+            width: 100%;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 50px;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .entrega-title {
+                font-size: 1.8rem;
+            }
+            .highlight-message {
+                font-size: 1.2rem;
+                padding: 10px 20px;
+            }
+        }
+
+        .highlight-message {
+            background: linear-gradient(135deg, #a855f7, #7e22ce);
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 15px 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .highlight-message a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logodramatime.webp" alt="DramaTime Logo" style="max-height: 120px; width: auto; object-fit: contain;">
+        </div>
+    </header>
+
+    <main class="entrega-container">
+        
+        <h1 class="entrega-title">SEU FILME COMPLETO LOGO ABAIXO</h1>
+        
+        <!-- Seta apontando para baixo -->
+        <div class="arrow-down">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </div>
+
+        <!-- Local para o Embed 9:16 -->
+        <div class="embed-placeholder" style="border: none; background: transparent;">
+            <iframe src="https://player.mediadelivery.net/play/682206/ff46d04a-630d-4836-a0e2-02a0fbde56ea" loading="lazy" style="border:0;width:100%;height:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe>
+        </div>
+
+        <div class="highlight-message">
+            Acesse: <a href="https://dramatime.site" target="_blank" rel="noopener noreferrer">dramatime.site</a>, para você acessar todos os filmes
+        </div>
+
+        <!-- Div para as próximas adições de conteúdo -->
+        <div class="future-content">
+            <!-- Outros elementos poderão ser colocados aqui no futuro -->
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 DramaTime.</p>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
+
